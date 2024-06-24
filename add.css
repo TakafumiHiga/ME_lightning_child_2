@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* cssデフォルトのコメントアウトは不要であれば削除 */
+/* フォントの設定 */
+
+/* 見出しの設定 */
+
+/* グローバルナビ */
+/* .global-nav-list>li:before {
+  border-bottom: 1px solid #33B270!important;
+}
+
+.global-nav-list>li>ul.sub-menu {
+  background-color: #1EAF76!important;
+}
+
+.global-nav-list>li.menu-item-has-children::after {
+  border-bottom-color: #1EAF76!important;
+}
+
+.global-nav-list ul li a:hover {
+  border-bottom-color: #55c197!important;
+  background-color: #55c197!important;
+} */
+
+/* PCグローバルナビ右側ボタン */
+/* .c-gnav-btn__contact,
+.c-gnav-btn__line {
+	padding:11px 12px 11px 14px;
+	line-height:1;
+}
+
+.c-tel {
+	font-family: YuGothic;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 18px;
+	text-align: center;
+	color: #333;
+}
+
+.c-tel i {
+	color:#145CC3;
+}
+
+.c-tel span {
+	font-family: "Noto Sans JP";
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	color: #151515;
+}
+
+.c-btn--line {
+	color: #06C755;
+  background-color: #ffff;
+	box-shadow: 0 5px 0 0 #06C755;
+	border:solid 1px #06C755;
+}
+
+.custom-buttons-wrapper {
+	display:none;
+}
+
+@media screen and (min-width: 991px) {
+  .custom-buttons-wrapper {
+	  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	padding-top: 1.1rem;
+    margin-bottom: 1rem;
+} 
+	.custom-buttons-wrapper a:not(:last-child) {
+		margin-right:1rem;
+	}
+} */
+
+/* フッターフローティングボタン */
+.footerFloatingMenu {
+  background-color: #fff;
+  display: flex !important;
+  text-align: center;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .footerFloatingMenu {
+    display: none !important;
+  }
+}
+
+.footerFloatingMenu a {
+  width: 50%;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 11px 4px;
+}
+
+/* トップへ戻るボタン */
+/* .page_top_btn {
+	background-color:initial;
+	background-image:url("img/to-top.jpg") !important;
+	width: 67px;
+    height: 67px;
+    background-size: 100% ;
+	background-position: center center;
+	box-shadow:none;
+	bottom:8%;
+	right:4%;
+} */

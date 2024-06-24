@@ -1,0 +1,27 @@
+
+/* 反映確認後削除 */
+h2 {
+  color: red;
+}
+
+/* h2 {
+  position: relative;
+  padding: 0.5rem 2rem 0.5rem 0;
+  border-bottom: 10px solid#14C3ED;
+  }
+  
+  h2:before {
+       position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 20%;
+      height: 10px;
+      content: '';
+      background: #083AC4;
+  }
+  
+  h3 {
+    padding: 1rem 2rem;
+    border-left: 5px solid #000;
+    background: initial;
+  } */

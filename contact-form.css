@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/* CF7用スタイル */
+.w05 input {width: 50%;}
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+@media (max-width: 768px) {
+	.w05 input {width: 100%;}
+	.wpcf7-form label {font-size: 18px;}
+}
+
+.contact-form-inner {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.form-item:first-child {
+    margin-top: 0;
+}
+.form-item {
+    width: 90%;
+    margin: 30px auto 0;
+}
+.form-item label {
+    display: flex;
+    font-size: 18px;
+    color: #333333;
+    align-items: center;
+	margin-bottom: 5px;
+}
+.form-item > input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #cccccc;
+}
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+.form-flex input {
+    height: 50px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+}
+.form-flex input.your-add-1 {
+    width: 40%;
+}
+.form-flex input.your-add-2 {
+    width: 100%;
+}
+.form-hissu {
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 0.75em;
+    padding: 2px 5px;
+    background-color: #BB9A14;
+}
+.form-free {
+    color: #ffffff;
+    font-size: 13px;
+    margin-left: 15px;
+    padding: 3px 5px;
+    background-color: #aaaaaa;
+}
+.form-item textarea{
+    height: auto;
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+}
+.last-check {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.last-check > input {
+    width: auto;
+    height: auto;
+    margin: 0 10px 0 0;
+}
+.last-check a {
+    text-decoration: none;
+}
+.form-item.send-btn {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+}
+.form-item.send-btn input {
+    background-color: #1B5A88;
+    color: #ffffff;
+    border-radius: 0px;
+	font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 35%;
+    margin: 0 15px;
+}
+.form-item.send-btn input:hover {
+	opacity: .75;
+    transition: all .3s;
+}
+.wpcf7-previous {
+    background-color: #aaa !important;
+}
+
+/* レスポンシブコード
+画面サイズ768px以下で表示を変えています
+ */
+@media screen and (max-width:768px) {
+    .contact-form-inner {
+        padding: 30px 15px;
+        border: none;
+    }
+    .form-item {
+        width: 100%;
+        margin: 20px auto 0;
+    }
+    .form-item > input{
+        height: 35px;
+        margin-top: 5px;
+    }
+    .form-item textarea{
+        margin-top: 5px;
+    }
+    .form-item input::placeholder {
+        padding-left:5px;
+    }
+    .form-flex input {
+        height: 35px;
+        margin-top: 5px;
+    }
+    .form-flex input.your-add-1 {
+        width: 70%;
+    }
+    .form-hissu {
+        margin-left: 5px;
+    }
+    .form-free {
+        margin-left: 5px;
+    }
+    .last-check > input {
+        margin: 0 5px 0 0;
+    }
+    .form-item.send-btn {
+		display: block;
+	}
+	.form-item.send-btn input {
+		font-size: 16px;
+		width: 100%;
+		margin: 15px 0 0;
+		height: 50px;
+	}
+	.form-item label {font-size: 16px;}
+	.wpcf7-list-item {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+/* 問い合わせページ・電話番号 */
+.contact_tel-box {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #1B5A88;
+    padding: 15px;
+	text-align: center;
+}
+.contact_tel-box a {
+	color: #1B5A88;
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.contact_tel-box p {
+	margin-bottom: 0;
+}
+@media (max-width: 480px) {
+	.contact_tel-box {width: 90%;}
+	.contact_tel-box a {font-size: 24px;}
+}
+
+/* 問い合わせステップ */
+.box_step03 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.box_step03 ul {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+	padding-left: 0;
+}
+.box_step03 ul li {
+  position: relative;
+  color: #333;
+  z-index: 1;
+}
+.box_step03 ul li::marker{color: #FFF;}
+.box_step03 ul li:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #ddd;
+  margin: 0 auto .5em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.box_step03 ul li.active {
+  font-size: 16px;
+  color: #333;
+}
+.box_step03 ul li.active:before {
+  margin: -.3em auto .5em;
+  background: #1B5A88;
+  width: 25px;
+  height: 25px;
+}
+.box_step03 ul:before {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 1px;
+  background: #ddd;
+  content: "";
+  left: 50%;
+  top: 15px;
+  z-index: 0;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .box_step03 {width: 90%;}
+}
+@media only screen and (max-width: 480px) {
+	.box_step03 ul:before {width: 85%;}
+}
+
+/* プライバシーポリシー */
+.policy_inbox {
+    padding: 30px 40px;
+    height: 300px;
+    overflow-y: scroll !important;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+	background: #FFF;
+}
+.policy_inbox p {
+    margin-bottom: 0;
+}
+.policy_inbox span.ttl {
+    font-size: 1.25em;
+    border-bottom: 2px solid #1B5A88;
+    display: block;
+    margin-bottom: 10px;
+}
+.policy_inbox a {color: #1B5A88;}
+
+@media (max-width: 480px) {
+	.policy_inbox {
+		width: 100%;
+		margin: 0;
+		padding: 20px;}
+}
