@@ -1,0 +1,10 @@
+# macOS システムファイル
+.DS_Store
+
+# Node.js modules
+node_modules/
+
+# ログファイル
+*.log
+
+# その他除外したいファイルやディレクトリ
